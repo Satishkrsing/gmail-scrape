@@ -8,14 +8,15 @@ import traceback
 import xlsxwriter
 from datetime import datetime, timedelta
 import datetime
+import utils
 # -------------------------------------------------
 #
 # Utility to read email from Gmail Using Python
 #
 # ------------------------------------------------
 ORG_EMAIL = "@gmail.com" 
-FROM_EMAIL = "bvm.msoffice" + ORG_EMAIL 
-FROM_PWD = "bvmmemsec@2019" 
+FROM_EMAIL = utils.emailID + ORG_EMAIL 
+FROM_PWD = utils.password 
 SMTP_SERVER = "imap.gmail.com" 
 SMTP_PORT = 993
 
